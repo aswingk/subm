@@ -45,11 +45,11 @@ public class MainActivity extends AppCompatActivity {
         // points can contain nested markdown elements, like code.
         int bulletPointColor = ContextCompat.getColor(this, R.color.colorAccent);
         int codeBackgroundColor = ContextCompat.getColor(this, R.color.code_background);
-        Typeface codeBlockTypeface = ResourcesCompat.getFont(this, R.font.inconsolata);
+//        Typeface codeBlockTypeface = ResourcesCompat.getFont(this, R.font.inconsolata);
 
-        CharSequence text = new MarkdownBuilder(bulletPointColor, codeBackgroundColor,
-                codeBlockTypeface, new Parser())
-                .markdownToSpans(getString(R.string.display_text));
-        textView.setText(text);
+//        CharSequence text = new MarkdownBuilder(bulletPointColor, codeBackgroundColor,
+//                codeBlockTypeface, new Parser())
+//                .markdownToSpans(getString(R.string.display_text));
+        textView.setText("AGK fixed the crash");
     }
 }
